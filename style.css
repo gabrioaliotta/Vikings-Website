@@ -1,0 +1,277 @@
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1E1E24 ;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:#21A179;
+}
+
+/* Cover */
+
+.cover {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("cover.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.cover-title {
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  margin-top: 150px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cover-subtitle {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  letter-spacing: 0.5;
+}
+
+  nav {
+    width: 100%;
+    background: transparent;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 50px 20px;
+  }
+
+  nav ul li {
+    display: inline;
+    color: white;
+    padding: 25px 25px;
+    font-size: 18px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  nav ul li a:hover {
+    color: #21A179;
+    transition: .3s;
+  }
+
+
+  @media(max-width:1000px) {
+
+    nav ul {
+      padding-top: 120px;
+    }
+
+    nav ul li {
+      font-size: 36px;
+    }
+
+    .cover-title {
+      font-size: 100px;
+      margin-top: 550px
+    }
+
+    .cover-subtitle {
+      font-size: 60px;
+    }
+
+  }
+
+/* Summary Section  */
+
+.summary-section {
+  background-color: #21A179;
+  width: 100%;
+  height: 500px;
+}
+
+.summary-section h2 {
+  color: #1E1E24;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.summary-section p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  text-align: center;
+  color: #1E1E24;
+  width: 850px;
+  margin: auto auto
+}
+
+.summary-section p a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #1E1E24
+}
+
+.summary-section p a:hover {
+  color: #FB9F89;
+  transition: .3s;
+}
+
+
+/* Ragnar Section */
+
+.ragnar-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #1E1E24
+}
+
+.card {
+  background-image: url("ragnar-cover.jpg");
+  background-position: center center;
+  background-size: cover;
+
+  width: 400px;
+  height: 550px;
+  margin: 100px 0px 100px 0px;
+  margin-right: 150px;
+  box-shadow: 10px 10px 0px -1px #21A179;
+  -webkit-box-shadow: 10px 10px 0px -1px #21A179;
+  -moz-box-shadow: 10px 10px 0px -1px #21A179;
+}
+
+.card-text {
+  margin: 100px 0px 100px 0px;
+  margin-left: 150px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  width: 400px;
+}
+
+.card-text h2 {
+  color: #21A179;
+  font-size: 32px;
+  padding-bottom: 15px;
+}
+
+.card-text p {
+  font-size: 28px;
+}
+
+
+@media(max-width:1000px) {
+
+  .ragnar-section {
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin-right: 0px;
+    margin-bottom: 80px;
+    width: 500px;
+    height: 650px;
+
+  }
+
+  .card-text {
+    margin-left: 0px;
+    flex-basis: 60%;
+    margin-top: 0px;
+  }
+
+  .card-text h2 {
+    font-size: 48px;
+  }
+
+  .card-text p {
+    font-size: 36px;
+  }
+
+
+
+}
+
+/* Watch Section */
+
+.watch-section {
+  background-color: #21A179;
+  width: 100%;
+  height: 350px;
+}
+
+.watch-section h2 {
+  color: #1E1E24;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.watch-section p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  text-align: center;
+  color: #1E1E24;
+}
+
+.watch-section p a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #1E1E24
+}
+
+.watch-section p a:hover {
+  color: #FB9F89;
+  transition: .3s;
+}
+
+
+/* Footer */
+
+footer {
+  background-color: #1E1E24;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  color: white;
+}
+
+footer p {
+  padding: 100px 0px;
+}
+
+footer p a {
+  text-decoration: none;
+  color: white;
+}
+
+footer p a:hover {
+  color: #21A179;
+  transition: .3s;
+}
